@@ -6,7 +6,7 @@ const studentController = require('../controllers/charactersController')    //gr
 router.get('/loadCharactersData' ,(req,res)=>{
     studentController.getCharactersData(req,res)
 });
-
+ //not working
 // router.get('/all',(req,res)=>{
 //     console.log("router here")
 //     studentController.getData(req,res)
