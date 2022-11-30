@@ -1,0 +1,37 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "My User Project CRUD",
+        "description": "My User Project Application API",
+        "license": {
+            "name": "MIT",
+            "url": "https://hp-api.herokuapp.com/"
+        }
+    },
+    "host": "localhost:3000",
+    "basePath": "/characters/loadCharactersData",
+    "tags": [{
+        "name": "Wizards",
+        "description": "A table for all the Wizards mentioned in Harry Potter books"
+    }],
+    "schemes": ["http"],
+    "consumes": ["application/json"],
+    "produces": ["application/json"],
+    "paths": {
+        "/loadCharacterById": {
+            "get": {
+                "tags": [
+                    "Uploads characters by ID"
+                ],
+                "summary": "Try me",
+
+                "responses": {
+                    "200": {
+                        "description": "This service allows you to create, update and delete persons/animals/poltergeists from the list of wizards"
+                    }
+                }
+            }
+        }
+    }
+}
